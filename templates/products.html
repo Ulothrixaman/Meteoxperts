@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  {{ tag }}
+{% endblock %}
+
+{% block content %}
+  <!-- Section Products Starts -->
+  <section class="packages" id="packages" xmlns="http://www.w3.org/1999/html" style="background: #f9f9f9;">
+    <div class="container" style="padding: 30px 0;">
+
+      <div class="row">
+        {% for product in products %}
+          <div class="col-md-4 py-3 py-md-0 mb-3"  >
+            <div class="card product_card" style="width: 15rem;margin: auto;">
+              <a href= "{% url 'single_product' product.pro_id %}" ><img style="height: 100%; width: 100%; border-radius: 5px;" src="/media/{{ product.pro_img }}" alt="" /></a>
+              <div class="card-body">
+                <p class="card-text" style="color: gray;">{{ tag }}</p>
+                <h3 class="card-title" style="color: #0864CC;">{{ product.title }}</h3>
+                <input type="text" value={{product.dis_price }} id="dis_price" hidden>
+                <input type="text" value={{product.price }} id="price" hidden>
+                <p id="fprice"></p>
+                <script>
+                  let dis_price = document.getElementById('dis_price').value;
+                  let price = document.getElementById('price').value;
+                  dis_price = +dis_price;
+                  price = +price;
+                  let fprice = document.getElementById('fprice');
+                  if(dis_price<price)
+                    fprice.innerHTML = `<h6><span style="text-decoration: line-through;"><i class="fa-solid fa-indian-rupee-sign" style="color: gray;"></i>${price}</span><strong><i class="fa-solid fa-indian-rupee-sign" style="margin-left: 5px;"></i>${dis_price}</strong></h6>`;
+                  else
+                    fprice.innerHTML = `
+                    <h6><strong><i class="fa-solid fa-indian-rupee-sign"></i></strong><strong>${price}</strong></h6>`;
+                </script>
+              </div>
+            </div>
+          </div>
+          {% empty %}No Record Found
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <!-- Section Products Ends -->
+{% endblock %}

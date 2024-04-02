@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Category
+{% endblock %}
+
+{% block content %}
+  <div class="d-flex" style=" flex-wrap: wrap; background:  white; padding: 20px;">
+    {% for category in categorys %}
+    <a style="color: black;" href="{% url 'product' category.cate_id %}"><div class="category-item">{{category.title}}</div></a>
+    {% endfor %}
+  </div>
+{% endblock %}
