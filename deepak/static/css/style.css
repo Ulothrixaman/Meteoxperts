@@ -1,198 +1,362 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    scroll-behavior: smooth;
-    font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Lato", sans-serif;
 }
 
 a {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 body {
-    background-color: #e5e9ec !important;
+  background-color: #e5e9ec !important;
 }
 
 /* Navbar Starts */
 #navbar {
-    background: white;
+  background: white;
 }
 
 #logo {
-    height: 100%;
-    max-height: 80px;
-    padding: 10px;
-    font-size: 36px;
-    font-weight: 550;
-    color: black;
-    background: white;
-    text-shadow: 0px 1px 1px black;
+  height: 100%;
+  max-height: 80px;
+  padding: 10px;
+  font-size: 36px;
+  font-weight: 550;
+  color: black;
+  background: white;
+  text-shadow: 0px 1px 1px black;
 }
 
 #logo img {
-    height: 60%;
-    max-height: 60px;
+  height: 60%;
+  max-height: 60px;
 }
 
 #logo span {
-    color: #ffa500;
+  color: #ffa500;
 }
 
 .navbar-toggler span {
-    color: black;
-    font-size: 25px;
-    padding-right: 5px;
+  color: black;
+  font-size: 25px;
+  padding-right: 5px;
 }
 
 .navbar-nav {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .nav-item .nav-link {
-    font-size: 16px;
-    font-weight: 550;
-    color: black;
-    letter-spacing: 1px;
-    border-radius: 3px;
-    transition: 0.2s ease;
+  font-size: 16px;
+  font-weight: 550;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.2s ease;
 }
 
 .nav-item .nav-link:hover {
-    background: rgb(56, 56, 199);
-    color: white;
+  background: rgb(56, 56, 199);
+  color: white;
 }
 
 #mynavbar {
-    justify-content: end;
-    padding-right: 20px;
+  justify-content: end;
+  padding-right: 20px;
 }
 
 /* Navbar Ends */
 
 .main {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: black;
 }
 
 .main-left,
 .main-right {
-    /* min-width: 500px; */
-    padding: 20px;
-    /* max-width: 100vw; */
+  /* min-width: 500px; */
+  padding: 20px;
+  /* max-width: 100vw; */
 }
 
 .main-left h1 {
-    font-size: 55px;
-    font-weight: bolder;
-    margin-bottom: 10px;
+  font-size: 55px;
+  font-weight: bolder;
+  margin-bottom: 10px;
 }
 
 .main-left p {
-    font-size: 15px;
-    line-height: 25px;
-    font-weight: 400;
-    margin-bottom: 20px;
-
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .main-left a {
-    display: block;
-    width: max-content;
-    text-decoration: none;
-    padding: 15px 25px;
-    margin-top: 20px;
-    background: #0864CC;
-    color: white;
-    border-radius: 10px;
-    font-weight: bold;
+  display: block;
+  width: max-content;
+  text-decoration: none;
+  padding: 15px 25px;
+  margin-top: 20px;
+  background: #0864cc;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
 a:hover {
-    color: white !important;
-    background: #0863ccd3;
+  color: white !important;
+  background: #0863ccd3;
 }
 
 .read {
-    color: black !important;
-    background: #FFCC33 !important;
+  color: black !important;
+  background: #ffcc33 !important;
 }
 
 /* service section starts */
 .services {
-
-    background: white;
-    /* margin-top: 50px; */
+  background: white;
+  /* margin-top: 50px; */
 }
 
 .services .card {
-    border: none;
-    cursor: pointer;
+  border: none;
+  cursor: pointer;
 }
 
 .services .card i {
-    font-size: 80px;
-    text-align: center;
-    color: #0066CB;
-    margin-top: 20px;
+  font-size: 80px;
+  text-align: center;
+  color: #0066cb;
+  margin-top: 20px;
 }
 
 .services .card .card-body h3 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .services .card .card-body a h3 {
-    text-decoration: none;
-    font-size: 18px;
-    color: black;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
 }
 
 .services .card .card-body {
-    text-align: center;
+  text-align: center;
 }
 
 .services .main-text h1 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 /* Section Services Ends */
 footer .nav-link {
-    color: white !important;
+  color: white !important;
 }
 
 footer a:hover {
-    color: rgba(255, 255, 255, 0.589) !important;
-    background: transparent !important;
+  color: rgba(255, 255, 255, 0.589) !important;
+  background: transparent !important;
 }
 
 .category-item {
-    width: max-content;
-    padding: 10px;
-    border: 1px solid black;
-    transition: all 0.1s;
-    cursor: pointer;
-    margin: 0 2px 2px 0;
-    border-radius: 2px;
-    background: white;
+  width: max-content;
+  padding: 10px;
+  border: 1px solid black;
+  transition: all 0.1s;
+  cursor: pointer;
+  margin: 0 2px 2px 0;
+  border-radius: 2px;
+  background: white;
 }
-.category-item:hover{
-    transform: scale(1.2); 
-}
-
-.category-item:nth-child(odd){
-    background: rgb(228, 228, 228);
+.category-item:hover {
+  transform: scale(1.2);
 }
 
-.product_card{
-    transition: all 0.3s;
+.category-item:nth-child(odd) {
+  background: rgb(228, 228, 228);
 }
 
-.product_card:hover{
-    transform: scale(1.05);
+.product_card {
+  transition: all 0.3s;
+}
+
+.product_card:hover {
+  transform: scale(1.05);
+}
+
+h4{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+article {
+  --img-scale: 1.001;
+  --title-color: black;
+  --link-icon-translate: -20px;
+  --link-icon-opacity: 0;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: none;
+  background: #fff;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+article a::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  cursor: pointer;
+  content: "";
+}
+
+/* basic article elements styling */
+article h2 {
+  margin: 0 0 18px 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.9rem;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  transition: color 0.3s ease-out;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+article img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+
+.article-body {
+  padding: 24px;
+}
+
+article a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #28666e;
+}
+
+article a:focus {
+  outline: 1px dotted #28666e;
+}
+
+article a .icon {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  transform: translateX(var(--link-icon-translate));
+  opacity: var(--link-icon-opacity);
+  transition: all 0.3s;
+}
+
+/* using the has() relational pseudo selector to update our custom properties */
+article:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --title-color: #28666e;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+ 
+
+.articles {
+  display: flex;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  article {
+    container: card/inline-size;
+  }
+  .article-body p {
+    display: none;
+  }
+}
+
+@container card (min-width: 380px) {
+  .article-wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+  }
+  .article-body {
+    padding-left: 0;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  figure img {
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+.cdesc{
+  height: 78px;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.cbody{
+  padding: 1rem 1rem 2.5rem 1rem;
+}
+
+.ctitle{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }

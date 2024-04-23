@@ -7,6 +7,8 @@ from django.contrib.auth.models import User
 class Category(models.Model):
     cate_id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=100)
+    img = models.ImageField(upload_to='category/', null=True)
+    description = models.TextField(null=True)
     
     def __str__(self):
         return self.title

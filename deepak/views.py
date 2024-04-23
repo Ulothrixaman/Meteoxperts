@@ -6,8 +6,67 @@ from deepak.models import *
 def home(request):
     return render(request, 'home.html', {})
 
+def contact(request):
+    return render(request, 'contact.html', {})
 
-def category(request):
+def solar(request):
+    return render(request, 'solor.html', {})
+
+def wind(request):
+    return render(request, 'wind.html', {})
+
+def hydro(request):
+    return render(request, 'hydro.html', {})
+
+def weather(request):
+    return render(request, 'weather.html', {})
+
+def electric(request):
+    return render(request, 'electric.html', {})
+
+def high(request):
+    return render(request, 'high.html', {})
+
+def air(request):
+    return render(request, 'air.html', {})
+
+def micro(request):
+    return render(request, 'micro.html', {})
+
+def land(request):
+    return render(request, 'land.html', {})
+
+def alert(request):
+    return render(request, 'alert.html', {})
+
+def snow(request):
+    return render(request, 'snow.html', {})
+
+def agro(request):
+    return render(request, 'agro.html', {})
+
+def sevices(request):
+    return render(request, 'services.html', {})
+
+def qhse(request):
+    return render(request, 'qhse.html', {})
+
+def qhsem(request):
+    return render(request, 'qhsem.html', {})
+
+def safety(request):
+    return render(request, 'safety.html', {})
+
+def certificate(request):
+    return render(request, 'certificate.html', {})
+
+def blog(request):
+    return render(request, 'blog.html', {})
+
+def aboutus(request):
+    return render(request, 'aboutus.html', {})
+
+def categorys(request):
     category = Category.objects.all()
     data = {
         'categorys': category
